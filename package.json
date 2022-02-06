@@ -1,0 +1,23 @@
+{
+	"name": "climatelux32",
+	"version": "1.0.0",
+	"description": "no",
+	"main": "main.js",
+	"scripts": {
+		"test": "no"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/alexeiromanov41/climatelux32.git"
+	},
+	"keywords": [
+		"climate"
+	],
+	"author": "RAS41",
+	"license": "UNLICENSED",
+	"dependencies": {
+		"animate.css": "^4.1.1",
+		"jquery": "^3.6.0",
+		"jquery-validation": "^1.19.3"
+	}
+}

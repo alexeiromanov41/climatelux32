@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>климат32.рф</title>
+		<link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/main.css?????version=1.0.1" />
+	</head>
+
+	<body data-page="sovet">
+		<div id="wrapper-modal" class="wrapper-modal">
+			<div id="overlay" class="overlay"></div>
+			<div id="modal-window" class="modal-window">
+				<div class="modal-window__top-row">
+					<div class="return__link_text">Обратный звонок</div>
+					<button id="btn-close" class="btn-close">X</button>
+				</div>
+				<form
+					action="return-call.php"
+					id="form__return-call"
+					class="form"
+					method="POST"
+				>
+					<input
+						type="text"
+						placeholder="Имя"
+						name="name"
+						class="input"
+						required
+					/>
+					<input
+						type="number"
+						placeholder="Телефон"
+						name="phone"
+						class="input"
+						required
+					/>
+					<button type="submit" class="btn-form">Отправить</button>
+				</form>
+			</div>
+		</div>
+		<a href="#" id="topLink" class="top-link">&#10142;</a>
+		<header class="header">
+			<div class="navigate__wrapper">
+				<div class="container">
+					<nav class="navigate">
+						<ul class="navigate__list">
+							<li class="navigate__list-item">
+								<a href="index.html" class="navigate__list-button">Главная</a>
+							</li>
+							<li class="navigate__list-item">
+								<a href="about.html" class="navigate__list-button"
+									>О компании</a
+								>
+							</li>
+							<li class="navigate__list-item">
+								<a href="uslugi.html" class="navigate__list-button"
+									>Наши услуги</a
+								>
+							</li>
+							<li class="navigate__list-item">
+								<a href="sovet.html" class="navigate__list-button"
+									>Полезные советы</a
+								>
+							</li>
+							<li class="navigate__list-item">
+								<a href="portfolio.html" class="navigate__list-button"
+									>Портфолио работ</a
+								>
+							</li>
+							<li class="navigate__list-item">
+								<a href="q_a.html" class="navigate__list-button"
+									>Частые вопросы</a
+								>
+							</li>
+							<li class="navigate__list-item">
+								<a href="contacts.html" class="navigate__list-button"
+									>Контакты</a
+								>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<div class="company-info__wrapper">
+				<div class="container">
+					<div class="company-info__wrapper2">
+						<div class="company-info__left">
+							<div class="company__logo">
+								<img
+									src="img/logo_RAS.png"
+									alt="Климатическое оборудование"
+									class="logo__cm32"
+									width="71px"
+									height="82px"
+								/>
+							</div>
+							<h1>КЛИМАТ ЛЮКС</h1>
+							<h2>Климатическая техника</h2>
+						</div>
+						<div class="company-info__right">
+							<div class="geo">
+								<div class="geo__title">г. Брянск</div>
+								<div class="geo__body">ул. Калинина, д. 38/2</div>
+							</div>
+							<div class="tel">
+								<div class="tel__title">
+									<a href="tel:+74832724040" class="tel__title-link"
+										>+7 (4832) 72-40-40</a
+									>
+								</div>
+								<div class="tel__body">Без выходных, с 9:00 до 18:00</div>
+							</div>
+							<div id="returnCallBut" class="return-call">Обратный звонок</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header__links">
+				<div class="container">
+					<div class="header__links-wrapper">
+						<div class="header__links-left">
+							<div class="menu-catalog">
+								Каталог
+								<div class="menu-catalog__active">
+									<ul class="menu-catalog__active-list">
+										<li class="active-list__item">
+											<a href="allCond.html" class="active-list__link"
+												>Кондиционеры</a
+											>
+										</li>
+										<li class="active-list__item">
+											<a href="dev.html" class="active-list__link"
+												>Водонагреватели</a
+											>
+										</li>
+										<li class="active-list__item">
+											<a href="dev.html" class="active-list__link"
+												>Обогреватели</a
+											>
+										</li>
+										<li class="active-list__item">
+											<a href="dev.html" class="active-list__link">Камины</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="header__links-right">
+							<div class="menu-links">
+								<ul class="menu-links__items">
+									<li class="menu-links__item">
+										<a href="sales.html" class="menu-links__but promotion"
+											>Акции</a
+										>
+									</li>
+									<li class="menu-links__item">
+										<a href="free_mount.html" class="menu-links__but mount"
+											>Бесплатный монтаж</a
+										>
+									</li>
+									<li class="menu-links__item">
+										<a href="dostavka.html" class="menu-links__but delivery"
+											>Доставка</a
+										>
+									</li>
+									<li class="menu-links__item">
+										<a
+											href="garantiya-kachestva.html"
+											class="menu-links__but service"
+											>Сервис</a
+										>
+									</li>
+									<li class="menu-links__item">
+										<a href="oplata.html" class="menu-links__but payment"
+											>Оплата</a
+										>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<div class="container">
+				<div class="site-path">
+					<a href="index.html" class="site-path__link">Главная</a>
+					<span>Полезные советы</span>
+				</div>
+			</div>
+			<section id="section-1" class="section-1">
+				<div class="container">
+					<div class="politic">
+						<div class="politic__wrapper">
+							<div class="politic__head">Полезные советы</div>
+							<div class="politic__content">
+								<div class="sovet">
+									<article class="sovet__article">
+										<time class="sovet__date">15.07.2019</time>
+										<a class="sovet__link" href="#"
+											>Полезные функции и режимы кондиционеров — как настроить
+											работу кондиционера?</a
+										>
+										<div class="sovet__body">
+											<div class="sovet__image">
+												<a href="#" class="sovet__img-link">
+													<img
+														src="img/sovet_1.webp"
+														width="199px"
+														height="150px"
+														alt="Полезные функции и режимы кондиционеров — как настроить работу кондиционера?"
+														title="Полезные функции и режимы кондиционеров — как настроить работу кондиционера?"
+														class="sovet__image-link"
+													/>
+												</a>
+											</div>
+											<div class="sovet__text">
+												<p>
+													При создании новости, помимо заголовка и содержимого,
+													Вы можете задать еще ряд параметров. Тут Вы видите
+													пример заполнения анонса новости. Пройдя по ссылке
+													"читать дальше" Вы можете ознакомиться с полным
+													текстом новостей и примером заполнения.
+												</p>
+											</div>
+										</div>
+									</article>
+									<article class="sovet__article">
+										<time class="sovet__date">15.07.2019</time>
+										<a class="sovet__link" href="#"
+											>Очистители и увлажнители воздуха для квартир</a
+										>
+										<div class="sovet__body">
+											<div class="sovet__image">
+												<a href="#" class="sovet__img-link">
+													<img
+														src="img/sovet_2.webp"
+														width="199px"
+														height="150px"
+														alt="Полезные функции и режимы кондиционеров — как настроить работу кондиционера?"
+														title="Полезные функции и режимы кондиционеров — как настроить работу кондиционера?"
+														class="sovet__image-link"
+													/>
+												</a>
+											</div>
+											<div class="sovet__text">
+												<p>
+													При создании новости, помимо заголовка и содержимого,
+													Вы можете задать еще ряд параметров. Тут Вы видите
+													пример заполнения анонса новости. Пройдя по ссылке
+													"читать дальше" Вы можете ознакомиться с полным
+													текстом новостей и примером заполнения.
+												</p>
+											</div>
+										</div>
+									</article>
+									<article class="sovet__article">
+										<time class="sovet__date">15.07.2019</time>
+										<a class="sovet__link" href="#">Как выбрать кондиционер</a>
+										<div class="sovet__body">
+											<div class="sovet__image">
+												<a href="#" class="sovet__img-link">
+													<img
+														src="img/sovet_3.webp"
+														width="199px"
+														height="150px"
+														alt="Полезные функции и режимы кондиционеров — как настроить работу кондиционера?"
+														title="Полезные функции и режимы кондиционеров — как настроить работу кондиционера?"
+														class="sovet__image-link"
+													/>
+												</a>
+											</div>
+											<div class="sovet__text">
+												<p>
+													При создании новости, помимо заголовка и содержимого,
+													Вы можете задать еще ряд параметров. Тут Вы видите
+													пример заполнения анонса новости. Пройдя по ссылке
+													"читать дальше" Вы можете ознакомиться с полным
+													текстом новостей и примером заполнения.
+												</p>
+											</div>
+										</div>
+									</article>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__wrapper">
+					<div class="footer-left">
+						<div class="footer-left__1">
+							<div class="company__logo">
+								<img
+									src="img/logo_RAS.png"
+									alt="Климатическое оборудование"
+									class="logo__cm32"
+									width="71px"
+									height="82px"
+								/>
+							</div>
+							<div class="footer__company-name">КЛИМАТ ЛЮКС</div>
+							<div class="footer__company-desc">Климатическая техника</div>
+							<a
+								href="politika_konfidentsialnosti.html"
+								class="agreement-link"
+								target="_parent"
+								>Политика конфиденциальности</a
+							>
+						</div>
+						<div class="footer-left__2">
+							<div class="geo">
+								<div class="geo__title color-white">г. Брянск</div>
+								<div class="geo__body color-white">ул. Калинина, д. 38/2</div>
+							</div>
+							<div class="tel">
+								<div class="tel__title">
+									<a href="tel:+74832724040" class="tel__title-link color-white"
+										>+7 (4832) 72-40-40</a
+									>
+								</div>
+								<div class="tel__body color-white">
+									Без выходных, с 9:00 до 18:00
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="footer-right">
+						<div class="footer-right__1">
+							<ul class="footer__list">
+								<li class="list__item">
+									<a href="garantiya-kachestva.html" class="list__link"
+										>Гарантия качества</a
+									>
+								</li>
+								<li class="list__item">
+									<a href="oplata.html" class="list__link">Способы оплаты</a>
+								</li>
+								<li class="list__item">
+									<a href="news.html" class="list__link">Новости</a>
+								</li>
+							</ul>
+						</div>
+						<div class="footer-right__2">
+							<ul class="footer__list">
+								<li class="list__item">
+									<a href="q_a.html" class="list__link">Вопросы и ответы</a>
+								</li>
+								<li class="list__item">
+									<a href="dostavka.html" class="list__link">Доставка</a>
+								</li>
+								<li class="list__item">
+									<a href="link.html" class="list__link">Напишите нам</a>
+								</li>
+							</ul>
+							<div class="footer__social">
+								<a
+									href="https://www.instagram.com/climatelux32/"
+									class="footer__social-item footer__social-insta"
+									target="_blank"
+								></a>
+								<a
+									href="https://vk.com/klimat32"
+									class="footer__social-item footer__social-vk"
+									target="_blank"
+								></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="node_modules\jquery\dist\jquery.min.js"></script>
+		<script src="node_modules\jquery-validation\dist\jquery.validate.min.js"></script>
+		<script src="js/dataBase.js"></script>
+		<script src="js/main.js?????version=1.0.1"></script>
+	</body>
+</html>

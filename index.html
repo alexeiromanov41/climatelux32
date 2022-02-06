@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>климат32.рф</title>
+		<link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/main.css?????version=1.0.1" />
+	</head>
+
+	<body data-page="index">
+		<div id="wrapper-modal" class="wrapper-modal">
+			<div id="overlay" class="overlay"></div>
+			<div id="modal-window" class="modal-window">
+				<div class="modal-window__top-row">
+					<div class="return__link_text">Обратный звонок</div>
+					<button id="btn-close" class="btn-close">X</button>
+				</div>
+				<form
+					action="return-call.php"
+					id="form__return-call"
+					class="form"
+					method="POST"
+				>
+					<input
+						type="text"
+						placeholder="Имя"
+						name="name"
+						class="input"
+						required
+					/>
+					<input
+						type="number"
+						placeholder="Телефон"
+						name="phone"
+						class="input"
+						required
+					/>
+					<button type="submit" class="btn-form">Отправить</button>
+				</form>
+			</div>
+		</div>
+		<a href="#" id="topLink" class="top-link">&#10142;</a>
+		<header class="header">
+			<div class="navigate__wrapper">
+				<div class="container">
+					<nav class="navigate">
+						<ul class="navigate__list">
+							<li class="navigate__list-item">
+								<a href="index.html" class="navigate__list-button">Главная</a>
+							</li>
+							<li class="navigate__list-item">
+								<a href="about.html" class="navigate__list-button"
+									>О компании</a
+								>
+							</li>
+							<li class="navigate__list-item">
+								<a href="uslugi.html" class="navigate__list-button"
+									>Наши услуги</a
+								>
+							</li>
+							<li class="navigate__list-item">
+								<a href="sovet.html" class="navigate__list-button"
+									>Полезные советы</a
+								>
+							</li>
+							<li class="navigate__list-item">
+								<a href="portfolio.html" class="navigate__list-button"
+									>Портфолио работ</a
+								>
+							</li>
+							<li class="navigate__list-item">
+								<a href="q_a.html" class="navigate__list-button"
+									>Частые вопросы</a
+								>
+							</li>
+							<li class="navigate__list-item">
+								<a href="contacts.html" class="navigate__list-button"
+									>Контакты</a
+								>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<div class="company-info__wrapper">
+				<div class="container">
+					<div class="company-info__wrapper2">
+						<div class="company-info__left">
+							<div class="company__logo">
+								<img
+									src="img/logo_RAS.png"
+									alt="Климатическое оборудование"
+									class="logo__cm32"
+									width="71px"
+									height="82px"
+								/>
+							</div>
+							<h1>КЛИМАТ ЛЮКС</h1>
+							<h2>Климатическая техника</h2>
+						</div>
+						<div class="company-info__right">
+							<div class="geo">
+								<div class="geo__title">г. Брянск</div>
+								<div class="geo__body">ул. Калинина, д. 38/2</div>
+							</div>
+							<div class="tel">
+								<div class="tel__title">
+									<a href="tel:+74832724040" class="tel__title-link"
+										>+7 (4832) 72-40-40</a
+									>
+								</div>
+								<div class="tel__body">Без выходных, с 9:00 до 18:00</div>
+							</div>
+							<div id="returnCallBut" class="return-call">Обратный звонок</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header__links">
+				<div class="container">
+					<div class="header__links-wrapper">
+						<div class="header__links-left">
+							<div class="menu-catalog">
+								Каталог
+								<div class="menu-catalog__active">
+									<ul class="menu-catalog__active-list">
+										<li class="active-list__item">
+											<a href="allCond.html" class="active-list__link"
+												>Кондиционеры</a
+											>
+										</li>
+										<li class="active-list__item">
+											<a href="dev.html" class="active-list__link"
+												>Водонагреватели</a
+											>
+										</li>
+										<li class="active-list__item">
+											<a href="dev.html" class="active-list__link"
+												>Обогреватели</a
+											>
+										</li>
+										<li class="active-list__item">
+											<a href="dev.html" class="active-list__link">Камины</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="header__links-right">
+							<div class="menu-links">
+								<ul class="menu-links__items">
+									<li class="menu-links__item">
+										<a href="sales.html" class="menu-links__but promotion"
+											>Акции</a
+										>
+									</li>
+									<li class="menu-links__item">
+										<a href="free_mount.html" class="menu-links__but mount"
+											>Бесплатный монтаж</a
+										>
+									</li>
+									<li class="menu-links__item">
+										<a href="dostavka.html" class="menu-links__but delivery"
+											>Доставка</a
+										>
+									</li>
+									<li class="menu-links__item">
+										<a
+											href="garantiya-kachestva.html"
+											class="menu-links__but service"
+											>Сервис</a
+										>
+									</li>
+									<li class="menu-links__item">
+										<a href="oplata.html" class="menu-links__but payment"
+											>Оплата</a
+										>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<section id="section-1" class="section-1">
+				<div class="container">
+					<div class="section-1__wrapper">
+						<div id="topSlider" class="top-slider">
+							<div class="slider__wrapper active">
+								<div class="slider__head">Настенные кондиционеры</div>
+								<div class="slider__desc">
+									актуальные тренды и популярные коллекции
+								</div>
+								<a href="allCond.html" class="slider__btn-link">Смотреть</a>
+							</div>
+							<div class="slider__wrapper">
+								<div class="slider__head">Воздухоочистители</div>
+								<div class="slider__desc">
+									актуальные тренды и популярные коллекции
+								</div>
+								<a href="dev.html" class="slider__btn-link">Смотреть</a>
+							</div>
+							<div class="slider__wrapper">
+								<div class="slider__head">Биокамины</div>
+								<div class="slider__desc">
+									актуальные тренды и популярные коллекции
+								</div>
+								<a href="dev.html" class="slider__btn-link">Смотреть</a>
+							</div>
+							<div class="slider-btn__wrapper">
+								<button id="ts-btn-prev" class="slider-btn slider-btn__left">
+									<
+								</button>
+								<button id="ts-btn-next" class="slider-btn slider-btn__right">
+									>
+								</button>
+							</div>
+						</div>
+						<div class="day-product">
+							<div class="day-product__wrapper">
+								<div class="day-product__top">
+									<div class="day-product__flag active">Товар дня</div>
+									<div
+										id="day-product__picture"
+										class="day-product__image"
+									></div>
+									<div class="day-product__name">
+										<div class="day-product__name-category">Кондиционер</div>
+										<div class="day-product__name-model">
+											<span id="day-product__brand"></span
+											><span id="day-product__article"></span>
+										</div>
+									</div>
+								</div>
+								<div class="day-product__bottom">
+									<div id="day-product__cost" class="day-product__price"></div>
+									<div class="day-product__btn">
+										<a
+											href="conditioner.html"
+											class="day-product__btn-link"
+											data-id="2"
+											onclick="getIdCond(event)"
+											>К товару</a
+										>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="general-products">
+						<div class="general-products__tabs-wrapper">
+							<div class="general-products__tabs-item tabs-item__active">
+								Кондиционеры
+							</div>
+						</div>
+						<div class="general-products__content">
+							<div
+								id="generalProducts"
+								class="general-products__products"
+							></div>
+							<div class="general-products__link-all">
+								<div class="link-all__top-layer"></div>
+								<a href="allCond.html" class="link-all__but">Все товары</a>
+							</div>
+						</div>
+					</div>
+					<div class="main-sales">
+						<div class="main-sales__wrapper">
+							<div class="main-sales__item">
+								<div class="main-sales__item-wrapper">
+									<div class="main-sales__item-left">
+										<div class="item-left__head">Скидка -20%</div>
+										<div class="item-left__description">
+											Весенняя распродажа! Успей приобрести масляный радиатор
+											ROR-C11-2200M по низкой цене!
+										</div>
+										<div class="item-left__link">
+											<a href="dev.html" class="item-left__btn-link"
+												>К товару</a
+											>
+										</div>
+									</div>
+									<div class="main-sales__item-right main-sales__1"></div>
+								</div>
+							</div>
+							<div class="main-sales__item">
+								<div class="main-sales__item-wrapper">
+									<div class="main-sales__item-left">
+										<div class="item-left__head">Скидка до 10%</div>
+										<div class="item-left__description">
+											Выгодные предложения на электрокамины от известных брендов
+										</div>
+										<div class="item-left__link">
+											<a href="dev.html" class="item-left__btn-link"
+												>К товару</a
+											>
+										</div>
+									</div>
+									<div class="main-sales__item-right main-sales__2"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="img-link">
+						<div class="img-link__wrapper">
+							<div class="img-link__case-1 img-link__case">
+								<a href="allCond.html" class="img-link__1 img-link__effect">
+								</a>
+								<div class="case-text__link">Кондиционеры</div>
+							</div>
+							<div class="img-link__2">
+								<div class="img-link__case-2-1 img-link__case">
+									<a href="dev.html" class="img-link__2-1 img-link__effect"></a>
+									<div class="case-text__link">Водонагреватели</div>
+								</div>
+								<div class="img-link__case-2-2 img-link__case">
+									<a href="dev.html" class="img-link__2-2 img-link__effect"></a>
+									<div class="case-text__link">Обогреватели</div>
+								</div>
+							</div>
+							<div class="img-link__case-3 img-link__case">
+								<a href="dev.html" class="img-link__3 img-link__effect"></a>
+								<div class="case-text__link">Камины</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="advantage">
+					<div class="container">
+						<div class="advantage__wrapper">
+							<div class="advantage-item">
+								<a
+									href="brigada.html"
+									class="advantage-item__link advantage-item__link-1"
+								>
+									<div class="advantage-item__link-text">
+										Собственная монтажная бригада
+									</div>
+									<div class="advantage-item__arrow">&#10142;</div>
+								</a>
+							</div>
+							<div class="advantage-item">
+								<a
+									href="dostavka.html"
+									class="advantage-item__link advantage-item__link-2"
+								>
+									<div class="advantage-item__link-text">
+										Бесплатная доставка
+									</div>
+									<div class="advantage-item__arrow">&#10142;</div>
+								</a>
+							</div>
+							<div class="advantage-item">
+								<a
+									href="garantiya-kachestva.html"
+									class="advantage-item__link advantage-item__link-3"
+								>
+									<div class="advantage-item__link-text">
+										Гарантийное и сервисное обслуживание 2 года
+									</div>
+									<div class="advantage-item__arrow">&#10142;</div>
+								</a>
+							</div>
+							<div class="advantage-item">
+								<a
+									href="oplata.html"
+									class="advantage-item__link advantage-item__link-4"
+								>
+									<div class="advantage-item__link-text">
+										Удобные способы оплаты
+									</div>
+									<div class="advantage-item__arrow">&#10142;</div>
+								</a>
+							</div>
+							<div class="advantage-item">
+								<a
+									href="sales.html"
+									class="advantage-item__link advantage-item__link-5"
+								>
+									<div class="advantage-item__link-text">Акции и скидки</div>
+									<div class="advantage-item__arrow">&#10142;</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__wrapper">
+					<div class="footer-left">
+						<div class="footer-left__1">
+							<div class="company__logo">
+								<img
+									src="img/logo_RAS.png"
+									alt="Климатическое оборудование"
+									class="logo__cm32"
+									width="71px"
+									height="82px"
+								/>
+							</div>
+							<div class="footer__company-name">КЛИМАТ ЛЮКС</div>
+							<div class="footer__company-desc">Климатическая техника</div>
+							<a
+								href="politika_konfidentsialnosti.html"
+								class="agreement-link"
+								target="_parent"
+								>Политика конфиденциальности</a
+							>
+						</div>
+						<div class="footer-left__2">
+							<div class="geo">
+								<div class="geo__title color-white">г. Брянск</div>
+								<div class="geo__body color-white">ул. Калинина, д. 38/2</div>
+							</div>
+							<div class="tel">
+								<div class="tel__title">
+									<a href="tel:+74832724040" class="tel__title-link color-white"
+										>+7 (4832) 72-40-40</a
+									>
+								</div>
+								<div class="tel__body color-white">
+									Без выходных, с 9:00 до 18:00
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="footer-right">
+						<div class="footer-right__1">
+							<ul class="footer__list">
+								<li class="list__item">
+									<a href="garantiya-kachestva.html" class="list__link"
+										>Гарантия качества</a
+									>
+								</li>
+								<li class="list__item">
+									<a href="oplata.html" class="list__link">Способы оплаты</a>
+								</li>
+								<li class="list__item">
+									<a href="news.html" class="list__link">Новости</a>
+								</li>
+							</ul>
+						</div>
+						<div class="footer-right__2">
+							<ul class="footer__list">
+								<li class="list__item">
+									<a href="q_a.html" class="list__link">Вопросы и ответы</a>
+								</li>
+								<li class="list__item">
+									<a href="dostavka.html" class="list__link">Доставка</a>
+								</li>
+								<li class="list__item">
+									<a href="link.html" class="list__link">Напишите нам</a>
+								</li>
+							</ul>
+							<div class="footer__social">
+								<a
+									href="https://www.instagram.com/climatelux32/"
+									class="footer__social-item footer__social-insta"
+									target="_blank"
+								></a>
+								<a
+									href="https://vk.com/klimat32"
+									class="footer__social-item footer__social-vk"
+									target="_blank"
+								></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="node_modules\jquery\dist\jquery.min.js"></script>
+		<script src="node_modules\jquery-validation\dist\jquery.validate.min.js"></script>
+
+		<script src="js/dataBase.js"></script>
+		<script src="js/main.js?????version=1.0.1"></script>
+	</body>
+</html>

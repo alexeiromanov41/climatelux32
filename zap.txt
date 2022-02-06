@@ -1,0 +1,71 @@
+????version=1.0.0
+
+    <!-- <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="0" /> -->
+
+            // fetch('http://cm32.ru.xsph.ru/js/cat.json')
+//   .then((response) => response.json())
+//   .then(
+//     (dtj) => (
+//       (dataCond = dtj.Worksheet[1].Бренд + dtj.Worksheet[1].Артикул),
+//       (elem.innerHTML = dataCond),
+//       (elem2.innerHTML = dtj.Worksheet[1].Цена),
+//       (elem4.src = dtj.Worksheet[1].Изображение),
+//       console.log(dtj)
+//     )
+//   );
+
+// const condWrapper = document.getElementById('cond__wrapper');
+// const brand = document.getElementById('brand');
+// const art = document.getElementById('art');
+
+// const createTemplateCondItem = (data) => {
+//   return `
+//       <div class="cond__item">
+//         <div class="cond__item-image">
+//           <img src="${
+//             data.Изображение ? data.Изображение.split(',')[0] : ''
+//           }" alt="Модель" width="280px" height="207px" />
+//         </div>
+//         <div class="cond__item-brand">Бренд: ${data.Бренд}</div>
+//         <div class="cond__item-article">Артикул: ${data.Артикул}</div>
+//         <div class="cond__item-cost">Цена:  ${data.Цена}</div>
+//       </div>
+//   `;
+// };
+
+// fetch(requestURLBaseCond)
+//   .then((response) => response.json())
+//   .then((data) => {
+//     if (data) {
+//       data.Worksheet.forEach((item) => {
+//         condWrapper.innerHTML += createTemplateCondItem(item);
+//         console.log(item);
+//       });
+//     }
+//   });
+
+/****************geo_begin*********/
+
+/****************geo_end*********/
+
+<!-- <button id="but11">PRESS</button> -->
+
+/*************************************************/
+/////////////Button_PRESS begin//////////////////////
+/*************************************************/
+
+const but11 = document.getElementById('but11');
+const section1 = document.getElementById('section-1');
+
+but11.addEventListener('click', () => {
+  // section1.classList.remove('active');
+  section1.classList.toggle('active');
+});
+
+/*************************************************/
+/////////////Button_PRESS end////////////////////////
+/*************************************************/
+
+background-color: rgb(190, 187, 187);
+
