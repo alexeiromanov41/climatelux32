@@ -1894,3 +1894,13 @@ form .error {
 	background-color: #33d7f5;
 }
 /****************filtr_end***********/
+
+/****************why_begin***********/
+.why {
+	margin-left: 25px;
+	margin-bottom: 20px;
+}
+.why__element {
+	padding: 2px;
+}
+/****************why_end***********/
