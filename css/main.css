@@ -1861,3 +1861,36 @@ form .error {
 }
 
 /****************Cond_end***********/
+
+/****************filtr_begin***********/
+.filtr {
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 10px;
+}
+.filtr__select {
+	display: block;
+	font-size: 16px;
+	margin-right: 5px;
+	font-weight: bold;
+	color: #1d60c6;
+	padding: 5px;
+	border-color: #1d60c6;
+	border-radius: 5px;
+}
+.filtr__but {
+	font-size: 16px;
+	font-weight: bold;
+	color: #1d60c6;
+	padding: 5px;
+	border-width: 1px;
+	border-color: #1d60c6;
+	border-radius: 5px;
+	background-color: #d9f8fd;
+}
+.filtr__but:hover {
+	color: #fff;
+	box-shadow: 0px 8px 15px rgb(0 205 242 / 30%);
+	background-color: #33d7f5;
+}
+/****************filtr_end***********/

@@ -102,7 +102,7 @@ if (dataPage == 'index') {
 
 	setTopProduct();
 
-	function createTemplateGP(element, data) {
+	function createTemplateGP(element) {
 		return `
 	    <div class="general-product__item">
 	    <div class="general-product__wrapper">
@@ -134,9 +134,9 @@ if (dataPage == 'index') {
 	`;
 	}
 
-	function setGeneralProducts(arrayOfGeneralProducts, data) {
+	function setGeneralProducts(arrayOfGeneralProducts) {
 		arrayOfGeneralProducts.forEach((element) => {
-			generalProducts.innerHTML += createTemplateGP(element, data);
+			generalProducts.innerHTML += createTemplateGP(element);
 		});
 	}
 
@@ -229,8 +229,9 @@ if (dataPage == 'conditioner') {
 	let TTHCond = '';
 
 	idCond = localStorage.getItem('condNumber');
+	console.log(idCond);
 
-	function setCondItem(data, idCond) {
+	function setCondItem(idCond) {
 		condItemArticle.innerHTML = baseCond[idCond].Артикул;
 		condItemBrand.innerHTML = baseCond[idCond].Бренд;
 		condItemImage.style.backgroundImage =
@@ -243,7 +244,7 @@ if (dataPage == 'conditioner') {
 		condItemPrice.innerHTML = baseCond[idCond].Цена;
 	}
 
-	setCondItem(baseCond, idCond);
+	setCondItem(idCond);
 }
 /*************************************************/
 /////////////conditioner end////////////////////////
@@ -282,7 +283,7 @@ if (dataPage == 'allCond') {
 	      <div class="general-product__bottom">
 	        <div class="general-product__price">${element.Цена}</div>
 	        <div class="general-product__btn">
-	          <a href="conditioner.html" class="general-product__btn-link" data-id="${element}" onclick="getIdCond(event)"
+	          <a href="conditioner.html" class="general-product__btn-link" data-id="${element.id}" onclick="getIdCond(event)"
 	            >К товару</a
 	          >
 	        </div>
@@ -304,18 +305,37 @@ if (dataPage == 'allCond') {
 	let uniBrands = [...new Set(allBrands)];
 
 	uniBrands.forEach((element, index) => {
-		// filtrCond.options[index] = element;
+		let newOption = new Option(element, element);
+		filtrCond.append(newOption);
 	});
 
-	console.log(filtrCond);
+	let selectedOption = filtrCond.options[filtrCond.selectedIndex];
+	console.log(selectedOption.value);
 
-	let allCondProductsArray = baseCond.filter((item) => item.Бренд == 'ONE AIR');
+	// let allCondProductsArray = baseCond.filter(
+	// 	(item) => item.Бренд == selectedOption.value
+	// );
+	let allCondProductsArray = [];
 
-	// console.log(uniBrands);
+	function searchBrands() {
+		baseCond.forEach((element, index) => {
+			if (element.Бренд == selectedOption.value) {
+				element.id = index;
+				allCondProductsArray.push(element);
+			}
+		});
+	}
+
+	searchBrands();
+
 	setACProducts(allCondProductsArray);
 
 	butFiltr.addEventListener('click', () => {
-		// console.log('click');
+		selectedOption = filtrCond.options[filtrCond.selectedIndex];
+		allCondProductsArray = [];
+		searchBrands();
+		allCondProducts.innerHTML = '';
+		setACProducts(allCondProductsArray);
 	});
 }
 /*************************************************/
